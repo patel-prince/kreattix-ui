@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import { KreattixProvider } from '@kreattix-ui/theme';
-import { ToastProvider } from '@kreattix-ui/react';
+import { KreattixProvider, ToastProvider } from '@kreattix/ui';
 
 export function DocsProviders({ children }: { children: React.ReactNode }) {
   return (

@@ -2,15 +2,6 @@
 
 import React, { useMemo, useState } from 'react';
 import {
-  KreattixProvider,
-  THEME_PRESETS,
-  generateThemeCss,
-  midnight,
-  useTheme,
-  type ThemePresetName,
-} from '@kreattix-ui/theme';
-import { generateColorScale } from '@kreattix-ui/tokens';
-import {
   Alert,
   Badge,
   Box,
@@ -20,12 +11,19 @@ import {
   Heading,
   HStack,
   Input,
+  KreattixProvider,
   RadioGroup,
   Select,
   Stack,
   Switch,
+  THEME_PRESETS,
   Text,
-} from '@kreattix-ui/react';
+  generateColorScale,
+  generateThemeCss,
+  midnight,
+  useTheme,
+  type ThemePresetName,
+} from '@kreattix/ui';
 import { CodeBlock } from '@/components/CodeBlock';
 
 const BRAND_SWATCHES = ['#4f46e5', '#0ea5e9', '#10b981', '#e11d48', '#f59e0b', '#8b5cf6', '#18181b'];
@@ -66,7 +64,7 @@ export default function ThemeStudioPage() {
     setTheme(preset);
   };
 
-  const exportedTs = `import { KreattixProvider } from '@kreattix-ui/theme';
+  const exportedTs = `import { KreattixProvider } from '@kreattix/ui';
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   return (

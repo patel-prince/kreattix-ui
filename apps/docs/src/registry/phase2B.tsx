@@ -20,7 +20,7 @@ import {
   Text,
   TreeView,
   useFormField,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import type { ComponentDocEntry } from './types';
 
 function FormFieldDemo() {

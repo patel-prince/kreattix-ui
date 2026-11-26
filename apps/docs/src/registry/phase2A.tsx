@@ -29,7 +29,7 @@ import {
   Tag,
   Text,
   Timeline,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import type { ComponentDocEntry } from './types';
 
 function PaginationPlayground() {
@@ -151,11 +151,11 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     playgroundControls: [{ name: 'showLineNumbers', label: 'Line Numbers', type: 'boolean', defaultValue: true }],
     renderPlayground: (v) => (
       <div style={{ width: '100%', maxWidth: '26rem' }}>
-        <CodeBlock language="tsx" showLineNumbers={Boolean(v.showLineNumbers)} code={`import { Button } from '@kreattix-ui/react';\n\nexport const App = () => <Button>Hello</Button>;`} />
+        <CodeBlock language="tsx" showLineNumbers={Boolean(v.showLineNumbers)} code={`import { Button } from '@kreattix/ui';\n\nexport const App = () => <Button>Hello</Button>;`} />
       </div>
     ),
     generatePlaygroundCode: (v) => `<CodeBlock language="tsx"${v.showLineNumbers ? ' showLineNumbers' : ''} code="..." />`,
-    examples: [{ title: 'CLI Command', description: 'Omit line numbers for single-line commands.', code: `<CodeBlock language="bash" code="npm install @kreattix-ui/react" />`, render: () => <CodeBlock language="bash" code="npm install @kreattix-ui/react" /> }],
+    examples: [{ title: 'CLI Command', description: 'Omit line numbers for single-line commands.', code: `<CodeBlock language="bash" code="npm install @kreattix/ui" />`, render: () => <CodeBlock language="bash" code="npm install @kreattix/ui" /> }],
     props: [{ name: 'code', type: 'string', defaultValue: '—', required: true, description: 'Code string.' }, { name: 'showLineNumbers', type: 'boolean', defaultValue: 'false', description: 'Displays line numbers.' }],
     slots: [{ name: 'root', description: 'Code container.' }, { name: 'copy', description: 'Copy button.' }],
     cssVars: [],

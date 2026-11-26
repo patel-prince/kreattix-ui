@@ -15,7 +15,7 @@ import {
   Text,
   Tooltip,
   toast,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import type { ComponentDocEntry } from './types';
 
 export const OVERLAYS_DOCS: ComponentDocEntry[] = [

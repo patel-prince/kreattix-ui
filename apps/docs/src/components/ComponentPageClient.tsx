@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Heading, Text } from '@kreattix-ui/react';
+import { Heading, Text } from '@kreattix/ui';
 import { getComponentBySlug } from '@/registry/components';
 import { ComponentDocView } from './ComponentDocView';
 

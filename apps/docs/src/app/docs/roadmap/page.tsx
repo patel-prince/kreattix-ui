@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Badge, Card, Grid, Heading, HStack, Stack, Text } from '@kreattix-ui/react';
+import { Badge, Card, Grid, Heading, HStack, Stack, Text } from '@kreattix/ui';
 import { COMPONENT_LIST } from '@/registry/components';
 
 const UPCOMING_GROUPS = [

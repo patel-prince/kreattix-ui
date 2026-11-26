@@ -21,7 +21,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npm run start --workspace=@kreattix-ui/docs -- -p 3099',
+    command: 'npm.cmd run start --workspace=@kreattix-ui/docs -- -p 3099',
     url: 'http://localhost:3099',
     reuseExistingServer: true,
     timeout: 60_000,

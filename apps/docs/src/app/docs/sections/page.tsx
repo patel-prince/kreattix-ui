@@ -12,7 +12,7 @@ import {
   Input,
   Stack,
   Text,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import { CodeBlock } from '@/components/CodeBlock';
 
 export default function SectionsGalleryPage() {

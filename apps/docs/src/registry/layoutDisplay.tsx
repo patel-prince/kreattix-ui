@@ -18,7 +18,7 @@ import {
   Skeleton,
   Stack,
   Text,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import type { ComponentDocEntry } from './types';
 
 export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
@@ -514,7 +514,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Zero-lock-in icon wrapper normalizing size and semantic tone for any icon library.',
     description:
       'Kreattix UI has zero icon dependencies. Use Icon to wrap icons from lucide-react, Heroicons, Phosphor, or custom inline SVGs with consistent sizing and semantic tones.',
-    importCode: `import { Icon } from '@kreattix-ui/react';\nimport { Star } from 'lucide-react';`,
+    importCode: `import { Icon } from '@kreattix/ui';\nimport { Star } from 'lucide-react';`,
     playgroundControls: [
       { name: 'size', label: 'Size', type: 'select', options: ['xs', 'sm', 'md', 'lg', 'xl'], defaultValue: 'lg' },
       { name: 'tone', label: 'Tone', type: 'select', options: ['inherit', 'primary', 'neutral', 'muted', 'success', 'warning', 'danger', 'info'], defaultValue: 'primary' },

@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import { PALETTES } from '@kreattix-ui/tokens';
-import { Box, Card, Grid, Heading, Stack, Text } from '@kreattix-ui/react';
+import { PALETTES } from '@kreattix/ui';
+import { Box, Card, Grid, Heading, Stack, Text } from '@kreattix/ui';
 
 const STEPS = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'] as const;
 

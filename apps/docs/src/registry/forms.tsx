@@ -12,7 +12,7 @@ import {
   Stack,
   Switch,
   Textarea,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import type { ComponentDocEntry } from './types';
 
 function ControlledSelectDemo() {

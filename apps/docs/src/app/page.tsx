@@ -19,7 +19,7 @@ import {
   Switch,
   Text,
   toast,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import { COMPONENT_LIST } from '@/registry/components';
 
 export default function HomePage() {
@@ -152,7 +152,7 @@ export default function HomePage() {
                   onClick={() =>
                     toast({
                       title: 'Preview ready',
-                      description: 'All 31 components rendered with zero runtime CSS-in-JS.',
+                      description: 'All 67 components rendered with zero runtime CSS-in-JS.',
                       tone: 'info',
                     })
                   }

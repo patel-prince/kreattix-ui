@@ -15,7 +15,7 @@ import {
   Switch,
   Tabs,
   Text,
-} from '@kreattix-ui/react';
+} from '@kreattix/ui';
 import type { ComponentDocEntry } from '@/registry/types';
 import { CodeBlock } from './CodeBlock';
 

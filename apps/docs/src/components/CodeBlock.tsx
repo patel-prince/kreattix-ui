@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Check, Copy } from 'lucide-react';
-import { Button } from '@kreattix-ui/react';
+import { Button } from '@kreattix/ui';
 
 export function CodeBlock({ code, title }: { code: string; title?: string }) {
   const [copied, setCopied] = useState(false);

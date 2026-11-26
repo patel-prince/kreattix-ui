@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@kreattix/ui": "*",
     "@kreattix-ui/react": "*",
     "@kreattix-ui/sections": "*",
     "@kreattix-ui/theme": "*",

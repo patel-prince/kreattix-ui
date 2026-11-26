@@ -4,8 +4,18 @@ import React, { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Menu, Moon, Palette, Search, Sparkles, Sun } from 'lucide-react';
-import { useTheme } from '@kreattix-ui/theme';
-import { Badge, Button, Dialog, Drawer, HStack, IconButton, Input, Stack, Text } from '@kreattix-ui/react';
+import {
+  Badge,
+  Button,
+  Dialog,
+  Drawer,
+  HStack,
+  IconButton,
+  Input,
+  Stack,
+  Text,
+  useTheme,
+} from '@kreattix/ui';
 import { COMPONENT_CATEGORIES, COMPONENT_LIST } from '@/registry/components';
 
 const GUIDE_LINKS = [

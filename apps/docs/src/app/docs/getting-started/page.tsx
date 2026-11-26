@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Alert, Heading, Stack, Text } from '@kreattix-ui/react';
+import { Alert, Heading, Stack, Text } from '@kreattix/ui';
 import { CodeBlock } from '@/components/CodeBlock';
 
 export default function GettingStartedPage() {

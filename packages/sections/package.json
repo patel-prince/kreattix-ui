@@ -1,7 +1,7 @@
 {
   "name": "@kreattix-ui/sections",
   "version": "0.1.0",
-  "description": "80+ readymade, responsive UI sections powered by Kreattix UI",
+  "description": "82 readymade, responsive UI sections powered by Kreattix UI",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
