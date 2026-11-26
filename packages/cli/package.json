@@ -1,0 +1,28 @@
+{
+  "name": "create-kreattix-app",
+  "version": "0.1.0",
+  "description": "Scaffold a React or Next.js App Router project pre-configured with Kreattix UI",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "create-kreattix-app": "./dist/index.cjs",
+    "kreattix": "./dist/index.cjs"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

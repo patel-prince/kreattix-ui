@@ -2,10 +2,13 @@
   "name": "@kreattix-ui/react",
   "version": "0.1.0",
   "description": "High-performance, Radix-powered React component library with Dual Ergonomics, zero-runtime layered CSS, and 3-tier ThemeProvider integration",
+  "license": "MIT",
   "type": "module",
   "sideEffects": [
     "*.css"
   ],
+  "files": ["dist", "README.md"],
+  "publishConfig": { "access": "public" },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
