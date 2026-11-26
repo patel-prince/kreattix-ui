@@ -21,9 +21,7 @@ export function generateTemplateFiles(opts: ScaffoldOptions): Record<string, str
         ? { dev: 'next dev', build: 'next build', start: 'next start' }
         : { dev: 'vite', build: 'vite build', preview: 'vite preview' },
     dependencies: {
-      '@kreattix-ui/react': '^0.1.0',
-      '@kreattix-ui/theme': '^0.1.0',
-      '@kreattix-ui/tokens': '^0.1.0',
+      '@kreattix/ui': '^0.1.0',
       'lucide-react': '^0.511.0',
       react: '^19.1.0',
       'react-dom': '^19.1.0',
@@ -41,9 +39,8 @@ export function generateTemplateFiles(opts: ScaffoldOptions): Record<string, str
     return {
       'package.json': JSON.stringify(pkgJson, null, 2) + '\n',
       'src/app/layout.tsx': `import React from 'react';
-import '@kreattix-ui/react/styles.css';
-import { KreattixProvider, ThemeInitScript } from '@kreattix-ui/theme';
-import { ToastProvider } from '@kreattix-ui/react';
+import '@kreattix/ui/styles.css';
+import { KreattixProvider, ThemeInitScript, ToastProvider } from '@kreattix/ui';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -63,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       'src/app/page.tsx': `'use client';
 
 import React from 'react';
-import { Badge, Button, Card, Container, Heading, HStack, Stack, Text, toast } from '@kreattix-ui/react';
+import { Badge, Button, Card, Container, Heading, HStack, Stack, Text, toast } from '@kreattix/ui';
 
 export default function HomePage() {
   return (
@@ -95,9 +92,8 @@ export default function HomePage() {
     'package.json': JSON.stringify(pkgJson, null, 2) + '\n',
     'src/main.tsx': `import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '@kreattix-ui/react/styles.css';
-import { KreattixProvider } from '@kreattix-ui/theme';
-import { ToastProvider } from '@kreattix-ui/react';
+import '@kreattix/ui/styles.css';
+import { KreattixProvider, ToastProvider } from '@kreattix/ui';
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -111,7 +107,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 );
 `,
     'src/App.tsx': `import React from 'react';
-import { Button, Container, Heading, Stack, Text } from '@kreattix-ui/react';
+import { Button, Container, Heading, Stack, Text } from '@kreattix/ui';
 
 export default function App() {
   return (

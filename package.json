@@ -8,9 +8,9 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "npm run build --workspace=@kreattix-ui/tokens && npm run build --workspace=@kreattix-ui/theme && npm run build --workspace=@kreattix-ui/react && npm run build --workspace=@kreattix-ui/sections && npm run build --workspace=create-kreattix-app && npm run build --workspace=@kreattix-ui/docs",
-    "build:packages": "npm run build --workspace=@kreattix-ui/tokens && npm run build --workspace=@kreattix-ui/theme && npm run build --workspace=@kreattix-ui/react && npm run build --workspace=@kreattix-ui/sections && npm run build --workspace=create-kreattix-app",
-    "typecheck": "npm run typecheck --workspace=@kreattix-ui/tokens && npm run typecheck --workspace=@kreattix-ui/theme && npm run typecheck --workspace=@kreattix-ui/react && npm run typecheck --workspace=@kreattix-ui/sections && npm run typecheck --workspace=create-kreattix-app && npm run typecheck --workspace=@kreattix-ui/docs",
+    "build": "npm run build --workspace=@kreattix-ui/tokens && npm run build --workspace=@kreattix-ui/theme && npm run build --workspace=@kreattix-ui/react && npm run build --workspace=@kreattix-ui/sections && npm run build --workspace=@kreattix/ui && npm run build --workspace=create-kreattix-app && npm run build --workspace=@kreattix-ui/docs",
+    "build:packages": "npm run build --workspace=@kreattix-ui/tokens && npm run build --workspace=@kreattix-ui/theme && npm run build --workspace=@kreattix-ui/react && npm run build --workspace=@kreattix-ui/sections && npm run build --workspace=@kreattix/ui && npm run build --workspace=create-kreattix-app",
+    "typecheck": "npm run typecheck --workspace=@kreattix-ui/tokens && npm run typecheck --workspace=@kreattix-ui/theme && npm run typecheck --workspace=@kreattix-ui/react && npm run typecheck --workspace=@kreattix-ui/sections && npm run typecheck --workspace=@kreattix/ui && npm run typecheck --workspace=create-kreattix-app && npm run typecheck --workspace=@kreattix-ui/docs",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",

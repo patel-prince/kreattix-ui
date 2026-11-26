@@ -26,7 +26,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Contextual feedback banner with semantic tones, icons, actions, and dismiss.',
     description:
       'Alert communicates important status updates, warnings, or errors inline with automatic semantic icons.',
-    importCode: `import { Alert } from '@kreattix-ui/react';`,
+    importCode: `import { Alert } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'tone', label: 'Tone', type: 'select', options: ['info', 'success', 'warning', 'danger', 'neutral'], defaultValue: 'info' },
       { name: 'title', label: 'Title', type: 'text', defaultValue: 'Update available' },
@@ -83,7 +83,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-progress',
     summary: 'Accessible progress bar with size, semantic tones, and percentage label.',
     description: 'Built on @radix-ui/react-progress with smooth GPU-accelerated transform transitions.',
-    importCode: `import { Progress } from '@kreattix-ui/react';`,
+    importCode: `import { Progress } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'value', label: 'Value (%)', type: 'number', defaultValue: 68 },
       { name: 'tone', label: 'Tone', type: 'select', options: ['primary', 'success', 'warning', 'danger'], defaultValue: 'primary' },
@@ -136,7 +136,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Tabbed navigation supporting line & pill variants with Dual Ergonomics.',
     description:
       'Built on @radix-ui/react-tabs. Pass an `items` array for rapid setup or compose `Tabs.List`, `Tabs.Trigger`, and `Tabs.Content` directly.',
-    importCode: `import { Tabs } from '@kreattix-ui/react';`,
+    importCode: `import { Tabs } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'variant', label: 'Variant', type: 'select', options: ['line', 'pill'], defaultValue: 'line' },
     ],
@@ -193,7 +193,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Collapsible disclosure panels with single/multiple modes and Dual Ergonomics.',
     description:
       'Built on @radix-ui/react-accordion with animated chevron indicator, `bordered` or `ghost` variants, and 1-liner `items` or compound composition.',
-    importCode: `import { Accordion } from '@kreattix-ui/react';`,
+    importCode: `import { Accordion } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'variant', label: 'Variant', type: 'select', options: ['bordered', 'ghost'], defaultValue: 'bordered' },
     ],
@@ -252,7 +252,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Accessible hover/focus tooltip with arrow and configurable placement.',
     description:
       'Built on @radix-ui/react-tooltip. Wrap any trigger element with `<Tooltip content="...">` in one line.',
-    importCode: `import { Tooltip } from '@kreattix-ui/react';`,
+    importCode: `import { Tooltip } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'content', label: 'Content', type: 'text', defaultValue: 'Copy to clipboard (Ctrl+C)' },
       { name: 'side', label: 'Side', type: 'select', options: ['top', 'right', 'bottom', 'left'], defaultValue: 'top' },
@@ -293,7 +293,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Non-modal floating panel with focus management and Dual Ergonomics.',
     description:
       'Built on @radix-ui/react-popover for rich interactive overlays such as filter panels and mini forms.',
-    importCode: `import { Popover } from '@kreattix-ui/react';`,
+    importCode: `import { Popover } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'side', label: 'Side', type: 'select', options: ['bottom', 'top', 'left', 'right'], defaultValue: 'bottom' },
     ],
@@ -338,7 +338,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Keyboard-navigable action menu with shortcuts, separators, and danger tones.',
     description:
       'Built on @radix-ui/react-dropdown-menu. Supports both a clean `items` array prop and full Radix compound subcomponents.',
-    importCode: `import { DropdownMenu } from '@kreattix-ui/react';`,
+    importCode: `import { DropdownMenu } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'align', label: 'Align', type: 'select', options: ['start', 'center', 'end'], defaultValue: 'end' },
     ],
@@ -388,7 +388,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Modal dialog with focus trapping, backdrop blur, sizes, and Dual Ergonomics.',
     description:
       'Built on @radix-ui/react-dialog. Open modals in one line with `trigger`, `title`, `description`, and `footer`, or drop down to `Dialog.Root/Content`.',
-    importCode: `import { Dialog } from '@kreattix-ui/react';`,
+    importCode: `import { Dialog } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'size', label: 'Size', type: 'select', options: ['sm', 'md', 'lg', 'xl'], defaultValue: 'md' },
       { name: 'title', label: 'Title', type: 'text', defaultValue: 'Confirm Deployment' },
@@ -454,7 +454,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Slide-over panel anchored to left, right, top, or bottom.',
     description:
       'Drawer reuses Radix Dialog accessibility (focus trap, scroll lock, Escape dismiss) in a smooth edge-anchored sheet.',
-    importCode: `import { Drawer } from '@kreattix-ui/react';`,
+    importCode: `import { Drawer } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'side', label: 'Side', type: 'select', options: ['right', 'left', 'top', 'bottom'], defaultValue: 'right' },
     ],
@@ -501,7 +501,7 @@ export const OVERLAYS_DOCS: ComponentDocEntry[] = [
     summary: 'Non-blocking notification queue with imperative toast() and useToast() hook.',
     description:
       'Built on @radix-ui/react-toast. Wrap your app in `<ToastProvider>` and trigger notifications from anywhere with `toast({ title, tone })`.',
-    importCode: `import { ToastProvider, toast, useToast } from '@kreattix-ui/react';`,
+    importCode: `import { ToastProvider, toast, useToast } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'tone', label: 'Tone', type: 'select', options: ['neutral', 'info', 'success', 'warning', 'danger'], defaultValue: 'success' },
       { name: 'title', label: 'Title', type: 'text', defaultValue: 'Changes saved!' },

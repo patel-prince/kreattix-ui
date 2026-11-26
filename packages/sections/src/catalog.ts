@@ -44,7 +44,7 @@ function entry(
     category,
     description,
     Component,
-    code: `import { ${name} } from '@kreattix-ui/sections';\n\nexport default function Example() {\n  return <${name} />;\n}`,
+    code: `import { ${name} } from '@kreattix/ui/sections';\n\nexport default function Example() {\n  return <${name} />;\n}`,
   };
 }
 

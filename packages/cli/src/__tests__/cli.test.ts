@@ -10,7 +10,8 @@ describe('create-kreattix-app CLI', () => {
     expect(opts.dryRun).toBe(true);
 
     const files = generateTemplateFiles(opts);
-    expect(files['package.json']).toContain('@kreattix-ui/react');
+    expect(files['package.json']).toContain('@kreattix/ui');
+    expect(files['src/app/layout.tsx']).toContain('@kreattix/ui/styles.css');
     expect(files['src/app/layout.tsx']).toContain('ThemeInitScript');
     expect(files['src/app/layout.tsx']).toContain('#0ea5e9');
     expect(files['src/app/page.tsx']).toContain('acme-web');

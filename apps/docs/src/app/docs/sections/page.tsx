@@ -44,7 +44,7 @@ export default function SectionsGalleryPage() {
         <Heading level={1} size="3xl">Sections Gallery</Heading>
         <Text size="lg" tone="secondary">
           Production-ready sections built 100% with Kreattix UI. Import directly from{' '}
-          <code>@kreattix-ui/sections</code> or copy the TSX snippet.
+          <code>@kreattix/ui/sections</code> or copy the TSX snippet.
         </Text>
       </Stack>
 

@@ -22,7 +22,7 @@ test.describe('Kreattix UI Docs E2E', () => {
     await expect(page.getByText('PricingThreeTier')).toBeVisible();
 
     await page.getByRole('button', { name: 'View TSX' }).first().click();
-    await expect(page.getByText("import { PricingThreeTier } from '@kreattix-ui/sections'")).toBeVisible();
+    await expect(page.getByText("import { PricingThreeTier } from '@kreattix/ui/sections'")).toBeVisible();
   });
 
   test('DataGrid & DatePicker interactive playgrounds work', async ({ page }) => {

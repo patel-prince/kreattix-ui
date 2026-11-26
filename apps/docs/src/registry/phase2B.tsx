@@ -53,7 +53,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Forms',
     summary: 'Numeric input with +/- steppers, min/max clamping, and Field ARIA.',
     description: 'Provides accessible increment/decrement controls and keyboard stepping.',
-    importCode: `import { NumberInput } from '@kreattix-ui/react';`,
+    importCode: `import { NumberInput } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'step', label: 'Step', type: 'number', defaultValue: 1 }],
     renderPlayground: (v) => <div style={{ width: '14rem' }}><NumberInput label="Seats" defaultValue={5} min={1} max={20} step={Number(v.step)} /></div>,
     generatePlaygroundCode: (v) => `<NumberInput label="Seats" defaultValue={5} min={1} max={20} step={${v.step}} />`,
@@ -69,7 +69,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Forms',
     summary: 'Multi-cell OTP/PIN input with auto-advance and paste-to-fill.',
     description: 'Ideal for 2FA verification codes with optional `mask` mode.',
-    importCode: `import { PinInput } from '@kreattix-ui/react';`,
+    importCode: `import { PinInput } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'mask', label: 'Mask Digits', type: 'boolean', defaultValue: false }],
     renderPlayground: (v) => <PinInput label="Verification Code" length={6} mask={Boolean(v.mask)} />,
     generatePlaygroundCode: (v) => `<PinInput label="Verification Code" length={6}${v.mask ? ' mask' : ''} />`,
@@ -85,7 +85,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Forms',
     summary: 'Password input with Show/Hide toggle and optional strength meter.',
     description: 'Extends `Input` with a visibility toggle button and live strength bar.',
-    importCode: `import { PasswordInput } from '@kreattix-ui/react';`,
+    importCode: `import { PasswordInput } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'showStrength', label: 'Show Strength', type: 'boolean', defaultValue: true }],
     renderPlayground: (v) => <div style={{ width: '18rem' }}><PasswordInput label="Password" showStrength={Boolean(v.showStrength)} defaultValue="Kreattix2026!" /></div>,
     generatePlaygroundCode: (v) => `<PasswordInput label="Password"${v.showStrength ? ' showStrength' : ''} />`,
@@ -101,7 +101,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Forms',
     summary: 'Drag-and-drop file uploader with file list and size validation.',
     description: 'Supports `accept`, `multiple`, and `maxSizeBytes` with Field error alerts.',
-    importCode: `import { FileUpload } from '@kreattix-ui/react';`,
+    importCode: `import { FileUpload } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => <div style={{ width: '22rem' }}><FileUpload label="Attachments" accept=".png,.jpg,.pdf" multiple /></div>,
     generatePlaygroundCode: () => `<FileUpload label="Attachments" accept=".png,.jpg,.pdf" multiple />`,
@@ -118,7 +118,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-popover',
     summary: 'Searchable single-select dropdown powered by Radix Popover.',
     description: 'Filter large option lists with instant search and keyboard-accessible selection.',
-    importCode: `import { Combobox } from '@kreattix-ui/react';`,
+    importCode: `import { Combobox } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '18rem' }}>
@@ -139,7 +139,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-popover',
     summary: 'Searchable multi-select with closable Tag chips.',
     description: 'Allows selecting multiple options with inline Tag chips and live search filtering.',
-    importCode: `import { MultiSelect } from '@kreattix-ui/react';`,
+    importCode: `import { MultiSelect } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '20rem' }}>
@@ -160,7 +160,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-popover',
     summary: 'Zero-dependency locale-aware calendar DatePicker powered by Intl.DateTimeFormat.',
     description: 'Uses native `Intl.DateTimeFormat` for localized month/date formatting with zero external date-library lock-in.',
-    importCode: `import { DatePicker } from '@kreattix-ui/react';`,
+    importCode: `import { DatePicker } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => <div style={{ width: '16rem' }}><DatePicker label="Release Date" /></div>,
     generatePlaygroundCode: () => `<DatePicker label="Release Date" onValueChange={setDate} />`,
@@ -176,7 +176,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Forms',
     summary: 'Swatch grid and hex input color selector.',
     description: 'Combine quick brand swatches with direct hex input.',
-    importCode: `import { ColorPicker } from '@kreattix-ui/react';`,
+    importCode: `import { ColorPicker } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => <div style={{ width: '18rem' }}><ColorPicker label="Primary Color" /></div>,
     generatePlaygroundCode: () => `<ColorPicker label="Primary Color" onValueChange={setColor} />`,
@@ -192,7 +192,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Forms',
     summary: 'Zero-dep form state & validation wrapper with Zod-compatible safeParse adapter.',
     description: 'Provides `useFormField(name)` context and supports custom `validate` or any schema with `safeParse`.',
-    importCode: `import { Form, useFormField } from '@kreattix-ui/react';`,
+    importCode: `import { Form, useFormField } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '18rem' }}>
@@ -217,7 +217,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Enterprise Data',
     summary: 'Semantic HTML table with striped, hoverable, and sticky-header modes.',
     description: 'Compound `Table.Header`, `Table.Body`, `Table.Row`, `Table.Head`, `Table.Cell`.',
-    importCode: `import { Table } from '@kreattix-ui/react';`,
+    importCode: `import { Table } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'striped', label: 'Striped', type: 'boolean', defaultValue: false }],
     renderPlayground: (v) => (
       <div style={{ width: '100%', maxWidth: '28rem' }}>
@@ -243,7 +243,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Enterprise Data',
     summary: 'Zero-dependency enterprise data grid with search, sorting, selection, and pagination.',
     description: 'Typed columns, numeric/natural sorting, row selection checkboxes, and empty states.',
-    importCode: `import { DataGrid } from '@kreattix-ui/react';`,
+    importCode: `import { DataGrid } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'selectable', label: 'Selectable', type: 'boolean', defaultValue: true }],
     renderPlayground: (v) => (
       <div style={{ width: '100%', maxWidth: '34rem' }}>
@@ -273,7 +273,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Enterprise Data',
     summary: 'Hierarchical expandable tree list for file explorers and org charts.',
     description: 'Supports `defaultExpandedIds`, controlled `selectedId`, and nested `children`.',
-    importCode: `import { TreeView } from '@kreattix-ui/react';`,
+    importCode: `import { TreeView } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '16rem' }}>
@@ -293,7 +293,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     category: 'Enterprise Data',
     summary: 'Structured list rows with leading media, title, description, and trailing slot.',
     description: 'Ideal for team rosters, activity feeds, and settings lists.',
-    importCode: `import { List } from '@kreattix-ui/react';`,
+    importCode: `import { List } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'divided', label: 'Divided', type: 'boolean', defaultValue: true }],
     renderPlayground: (v) => (
       <div style={{ width: '100%', maxWidth: '24rem' }}>
@@ -317,7 +317,7 @@ export const PHASE2_B_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-dialog',
     summary: 'Cmd/Ctrl+K command launcher with instant filtering and keyboard shortcuts.',
     description: 'Built on Radix Dialog with fuzzy search, grouped commands, and `Kbd` hints.',
-    importCode: `import { CommandPalette } from '@kreattix-ui/react';`,
+    importCode: `import { CommandPalette } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => <CommandDemo />,
     generatePlaygroundCode: () => `<CommandPalette commands={[{ id: '1', label: 'New Project', shortcut: 'N', onSelect: fn }]} />`,

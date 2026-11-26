@@ -57,7 +57,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Layout',
     summary: 'Responsive max-width container with centered alignment presets.',
     description: 'Centers page content with standard breakpoint max-widths (`sm` through `2xl` or `full`).',
-    importCode: `import { Container } from '@kreattix-ui/react';`,
+    importCode: `import { Container } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'size', label: 'Size', type: 'select', options: ['sm', 'md', 'lg', 'xl', '2xl', 'full'], defaultValue: 'md' }],
     renderPlayground: (v) => (
       <Container size={v.size as 'md'}>
@@ -78,7 +78,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-aspect-ratio',
     summary: 'Maintains consistent width-to-height ratio for media and embeds.',
     description: 'Built on `@radix-ui/react-aspect-ratio` for responsive 16:9, 4:3, or 1:1 media frames.',
-    importCode: `import { AspectRatio } from '@kreattix-ui/react';`,
+    importCode: `import { AspectRatio } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '16rem' }}>
@@ -103,7 +103,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-scroll-area',
     summary: 'Cross-browser custom scrollbars with smooth Radix viewport.',
     description: 'Built on `@radix-ui/react-scroll-area` with clean vertical/horizontal scrollbars.',
-    importCode: `import { ScrollArea } from '@kreattix-ui/react';`,
+    importCode: `import { ScrollArea } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <ScrollArea style={{ height: '8rem', width: '16rem', border: '1px solid var(--kx-border-default)', borderRadius: 'var(--kx-radius-md)', padding: '0.75rem' }}>
@@ -123,7 +123,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Layout',
     summary: 'Split-pane layout with pointer and keyboard-accessible resize handle.',
     description: 'Supports horizontal or vertical splitting with `ArrowLeft`/`ArrowRight` keyboard resizing.',
-    importCode: `import { ResizablePanels } from '@kreattix-ui/react';`,
+    importCode: `import { ResizablePanels } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '100%', maxWidth: '28rem', height: '8rem' }}>
@@ -147,7 +147,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Display',
     summary: 'Formatted code snippet viewer with line numbers and copy button.',
     description: 'Displays syntax-styled code with optional line numbers and 1-click clipboard copy.',
-    importCode: `import { CodeBlock } from '@kreattix-ui/react';`,
+    importCode: `import { CodeBlock } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'showLineNumbers', label: 'Line Numbers', type: 'boolean', defaultValue: true }],
     renderPlayground: (v) => (
       <div style={{ width: '100%', maxWidth: '26rem' }}>
@@ -167,7 +167,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Display',
     summary: 'Semantic keyboard shortcut keycap.',
     description: 'Renders tactile `<kbd>` keycaps for shortcuts in menus, tooltips, and command palettes.',
-    importCode: `import { Kbd } from '@kreattix-ui/react';`,
+    importCode: `import { Kbd } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'size', label: 'Size', type: 'select', options: ['sm', 'md'], defaultValue: 'md' }],
     renderPlayground: (v) => <Kbd size={v.size as 'md'}>Ctrl + K</Kbd>,
     generatePlaygroundCode: (v) => `<Kbd size="${v.size}">Ctrl + K</Kbd>`,
@@ -183,7 +183,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Display',
     summary: 'Closable and selectable chip for filters, categories, and multi-select.',
     description: 'Supports semantic tones, `selected` state, and `closable` dismiss button.',
-    importCode: `import { Tag } from '@kreattix-ui/react';`,
+    importCode: `import { Tag } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'tone', label: 'Tone', type: 'select', options: ['neutral', 'primary', 'success', 'danger'], defaultValue: 'primary' },
       { name: 'closable', label: 'Closable', type: 'boolean', defaultValue: true },
@@ -202,7 +202,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Display',
     summary: 'Chronological activity & event feed with connected status dots.',
     description: 'Supports 1-liner `items` array or compound `Timeline.Item` children.',
-    importCode: `import { Timeline } from '@kreattix-ui/react';`,
+    importCode: `import { Timeline } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '100%', maxWidth: '24rem' }}>
@@ -222,7 +222,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Display',
     summary: 'KPI metric card with trend delta badge and footer slot.',
     description: 'Built for analytics dashboards with `up`, `down`, and `neutral` delta styling.',
-    importCode: `import { StatCard } from '@kreattix-ui/react';`,
+    importCode: `import { StatCard } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'trend', label: 'Trend', type: 'select', options: ['up', 'down', 'neutral'], defaultValue: 'up' }],
     renderPlayground: (v) => (
       <div style={{ width: '16rem' }}>
@@ -242,7 +242,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Display',
     summary: 'Zero-data placeholder with icon, title, description, and action CTA.',
     description: 'Guides users when tables, searches, or dashboards have no records yet.',
-    importCode: `import { EmptyState } from '@kreattix-ui/react';`,
+    importCode: `import { EmptyState } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <div style={{ width: '100%', maxWidth: '24rem' }}>
@@ -262,7 +262,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Actions',
     summary: 'Groups related buttons with seamless attached borders.',
     description: 'Renders horizontal or vertical `role="group"` button clusters.',
-    importCode: `import { ButtonGroup, Button } from '@kreattix-ui/react';`,
+    importCode: `import { ButtonGroup, Button } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'attached', label: 'Attached', type: 'boolean', defaultValue: true }],
     renderPlayground: (v) => (
       <ButtonGroup attached={Boolean(v.attached)}>
@@ -285,7 +285,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-dropdown-menu',
     summary: 'Primary action button paired with a secondary DropdownMenu trigger.',
     description: 'Combines `ButtonGroup` + `Button` + `DropdownMenu` for default + alternate actions.',
-    importCode: `import { SplitButton } from '@kreattix-ui/react';`,
+    importCode: `import { SplitButton } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <SplitButton items={[{ label: 'Save as Draft' }, { label: 'Schedule Publish' }]}>Publish</SplitButton>
@@ -303,7 +303,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Feedback & Navigation',
     summary: 'Accessible hierarchical page trail with customizable separators.',
     description: 'Marks the current page with `aria-current="page"` automatically.',
-    importCode: `import { Breadcrumb } from '@kreattix-ui/react';`,
+    importCode: `import { Breadcrumb } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => <Breadcrumb items={[{ label: 'Home', href: '#' }, { label: 'Docs', href: '#' }, { label: 'Breadcrumb' }]} />,
     generatePlaygroundCode: () => `<Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Docs' }]} />`,
@@ -319,7 +319,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Feedback & Navigation',
     summary: 'Smart page navigation with automatic ellipsis collapsing.',
     description: 'Handles large page counts cleanly with `siblingCount` and `aria-current="page"`.',
-    importCode: `import { Pagination } from '@kreattix-ui/react';`,
+    importCode: `import { Pagination } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => <PaginationPlayground />,
     generatePlaygroundCode: () => `<Pagination page={page} totalPages={8} onPageChange={setPage} />`,
@@ -335,7 +335,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Feedback & Navigation',
     summary: 'Multi-step progress indicator for wizards and onboarding flows.',
     description: 'Supports horizontal/vertical orientation and optional interactive `onStepClick`.',
-    importCode: `import { Stepper } from '@kreattix-ui/react';`,
+    importCode: `import { Stepper } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => <StepperPlayground />,
     generatePlaygroundCode: () => `<Stepper activeStep={step} onStepClick={setStep} steps={[...]} />`,
@@ -352,7 +352,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-navigation-menu',
     summary: 'Accessible top-level site navigation with rich dropdown mega-menus.',
     description: 'Built on `@radix-ui/react-navigation-menu` with Dual Ergonomics.',
-    importCode: `import { NavigationMenu } from '@kreattix-ui/react';`,
+    importCode: `import { NavigationMenu } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <NavigationMenu
@@ -376,7 +376,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-menubar',
     summary: 'Desktop-style application menu bar (File, Edit, View).',
     description: 'Built on `@radix-ui/react-menubar` with keyboard shortcuts and separators.',
-    importCode: `import { Menubar } from '@kreattix-ui/react';`,
+    importCode: `import { Menubar } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <Menubar
@@ -399,7 +399,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     category: 'Feedback & Navigation',
     summary: 'Collapsible grouped sidebar navigation with active state and badges.',
     description: 'Ideal for SaaS application shells and admin consoles.',
-    importCode: `import { SidebarNav } from '@kreattix-ui/react';`,
+    importCode: `import { SidebarNav } from '@kreattix/ui';`,
     playgroundControls: [{ name: 'collapsed', label: 'Collapsed', type: 'boolean', defaultValue: false }],
     renderPlayground: (v) => (
       <SidebarNav
@@ -421,7 +421,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-context-menu',
     summary: 'Right-click contextual action menu powered by Radix ContextMenu.',
     description: 'Built on `@radix-ui/react-context-menu` with danger tones, shortcuts, and separators.',
-    importCode: `import { ContextMenu } from '@kreattix-ui/react';`,
+    importCode: `import { ContextMenu } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <ContextMenu items={[{ label: 'Copy Link', shortcut: 'Ctrl+C' }, { label: 'Delete', tone: 'danger', separatorBefore: true }]}>
@@ -444,7 +444,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-hover-card',
     summary: 'Rich preview card revealed on hover or focus.',
     description: 'Built on `@radix-ui/react-hover-card` for user profiles, link previews, and metadata.',
-    importCode: `import { HoverCard } from '@kreattix-ui/react';`,
+    importCode: `import { HoverCard } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <HoverCard
@@ -466,7 +466,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-alert-dialog',
     summary: 'Destructive confirmation modal requiring explicit user action.',
     description: 'Built on `@radix-ui/react-alert-dialog`; prevents accidental dismissal on backdrop click.',
-    importCode: `import { AlertDialog } from '@kreattix-ui/react';`,
+    importCode: `import { AlertDialog } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <AlertDialog
@@ -490,7 +490,7 @@ export const PHASE2_A_DOCS: ComponentDocEntry[] = [
     radix: '@radix-ui/react-dialog',
     summary: 'Bottom or edge-anchored action sheet built on Radix Dialog.',
     description: 'Ergonomic sheet defaulting to `side="bottom"` for mobile-friendly action panels.',
-    importCode: `import { Sheet } from '@kreattix-ui/react';`,
+    importCode: `import { Sheet } from '@kreattix/ui';`,
     playgroundControls: [],
     renderPlayground: () => (
       <Sheet trigger={<Button variant="outline">Open Bottom Sheet</Button>} title="Share Document">

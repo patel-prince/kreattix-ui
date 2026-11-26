@@ -3,6 +3,7 @@
 Zero-runtime, Radix-powered React component library, 3-tier `ThemeProvider`, **67 components**, **82 readymade sections**, and a 100% dogfooded Next.js App Router documentation website.
 
 ## Packages
+- **`@kreattix/ui`** — **Recommended single-package install** (`@kreattix/ui`, `@kreattix/ui/styles.css`, `@kreattix/ui/theme`, `@kreattix/ui/tokens`, `@kreattix/ui/sections`)
 - `@kreattix-ui/tokens` — Perceptual 11-step color scales, WCAG contrast helpers, & `--kx-*` CSS tokens
 - `@kreattix-ui/theme` — 3-tier `KreattixProvider`, nested scoped zones, presets, `ThemeInitScript`, & `generateThemeCss()`
 - `@kreattix-ui/react` — 67 accessible components built on Radix UI Primitives with Dual Ergonomics & `unstyled` mode
@@ -11,6 +12,8 @@ Zero-runtime, Radix-powered React component library, 3-tier `ThemeProvider`, **6
 
 ## Quick Start
 ```bash
+npm install @kreattix/ui
+# or scaffold a new app:
 npx create-kreattix-app my-app
 ```
 

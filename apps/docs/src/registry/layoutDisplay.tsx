@@ -30,7 +30,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Polymorphic layout primitive with surface, padding, and radius token shortcuts.',
     description:
       'Box is the foundational layout primitive in Kreattix UI. It provides direct access to surface, padding, and radius tokens and supports `asChild` polymorphism via Radix Slot.',
-    importCode: `import { Box } from '@kreattix-ui/react';`,
+    importCode: `import { Box } from '@kreattix/ui';`,
     playgroundControls: [
       {
         name: 'surface',
@@ -96,7 +96,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Flexbox layout primitive with HStack and VStack shorthands.',
     description:
       'Stack arranges children along a vertical or horizontal axis with token-based spacing. Includes HStack (row, centered) and VStack (column) convenience exports.',
-    importCode: `import { Stack, HStack, VStack } from '@kreattix-ui/react';`,
+    importCode: `import { Stack, HStack, VStack } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'direction', label: 'Direction', type: 'select', options: ['row', 'column'], defaultValue: 'row' },
       { name: 'gap', label: 'Gap (token)', type: 'number', defaultValue: 3 },
@@ -142,7 +142,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'CSS Grid layout with fixed columns or responsive auto-fit.',
     description:
       'Grid simplifies CSS Grid layouts with numeric column counts or automatic responsive wrapping via `minChildWidth`.',
-    importCode: `import { Grid } from '@kreattix-ui/react';`,
+    importCode: `import { Grid } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'columns', label: 'Columns', type: 'number', defaultValue: 3 },
       { name: 'gap', label: 'Gap (token)', type: 'number', defaultValue: 4 },
@@ -188,7 +188,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Accessible horizontal or vertical separator with optional centered label.',
     description:
       'Built on @radix-ui/react-separator, Divider visually and semantically separates content sections and supports inline labels.',
-    importCode: `import { Divider } from '@kreattix-ui/react';`,
+    importCode: `import { Divider } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'orientation', label: 'Orientation', type: 'select', options: ['horizontal', 'vertical'], defaultValue: 'horizontal' },
       { name: 'label', label: 'Label', type: 'text', defaultValue: 'OR' },
@@ -241,7 +241,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Semantic typography component with size, tone, weight, and truncation.',
     description:
       'Text standardizes body copy, captions, and inline labels across your app with optical sizing and semantic tones.',
-    importCode: `import { Text } from '@kreattix-ui/react';`,
+    importCode: `import { Text } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'size', label: 'Size', type: 'select', options: ['xs', 'sm', 'md', 'lg', 'xl'], defaultValue: 'md' },
       { name: 'tone', label: 'Tone', type: 'select', options: ['primary', 'secondary', 'muted', 'brand', 'success', 'warning', 'danger'], defaultValue: 'primary' },
@@ -284,7 +284,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Semantic h1–h6 heading with decoupled visual size.',
     description:
       'Heading lets you preserve strict document outline hierarchy (`level={2}`) while choosing any visual scale (`size="3xl"`).',
-    importCode: `import { Heading } from '@kreattix-ui/react';`,
+    importCode: `import { Heading } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'level', label: 'HTML Level', type: 'select', options: ['1', '2', '3', '4', '5', '6'], defaultValue: '2' },
       { name: 'size', label: 'Visual Size', type: 'select', options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl'], defaultValue: 'xl' },
@@ -319,7 +319,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Compact status indicator with soft, solid, outline, and dot variants.',
     description:
       'Badge highlights counts, statuses, and metadata across cards, tables, and navigation.',
-    importCode: `import { Badge } from '@kreattix-ui/react';`,
+    importCode: `import { Badge } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'variant', label: 'Variant', type: 'select', options: ['soft', 'solid', 'outline', 'dot'], defaultValue: 'soft' },
       { name: 'tone', label: 'Tone', type: 'select', options: ['primary', 'neutral', 'success', 'warning', 'danger', 'info'], defaultValue: 'primary' },
@@ -367,7 +367,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'User avatar with automatic initials fallback, status dot, and AvatarGroup.',
     description:
       'Built on @radix-ui/react-avatar, Avatar gracefully falls back to computed initials when no image is provided or if loading fails.',
-    importCode: `import { Avatar, AvatarGroup } from '@kreattix-ui/react';`,
+    importCode: `import { Avatar, AvatarGroup } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'name', label: 'Name', type: 'text', defaultValue: 'Prince Kumar' },
       { name: 'size', label: 'Size', type: 'select', options: ['xs', 'sm', 'md', 'lg', 'xl'], defaultValue: 'lg' },
@@ -415,7 +415,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Composable surface container with Header, Body, Footer, and interactive hover.',
     description:
       'Card groups related information and actions using `Card.Header`, `Card.Body`, and `Card.Footer` subcomponents.',
-    importCode: `import { Card } from '@kreattix-ui/react';`,
+    importCode: `import { Card } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'variant', label: 'Variant', type: 'select', options: ['outlined', 'elevated', 'subtle'], defaultValue: 'outlined' },
       { name: 'interactive', label: 'Interactive Hover', type: 'boolean', defaultValue: false },
@@ -467,7 +467,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Shimmering loading placeholder with rect, circle, and multi-line text shapes.',
     description:
       'Skeleton reduces perceived latency during async data fetching with accessible aria-hidden shimmer placeholders.',
-    importCode: `import { Skeleton } from '@kreattix-ui/react';`,
+    importCode: `import { Skeleton } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'shape', label: 'Shape', type: 'select', options: ['rect', 'circle', 'text'], defaultValue: 'rect' },
       { name: 'lines', label: 'Lines (text)', type: 'number', defaultValue: 3 },
@@ -556,7 +556,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'High-craft action button with 5 variants, loading spinner, icons, and asChild.',
     description:
       'Button supports solid, soft, outline, ghost, and link variants, density-aware heights, built-in loading state with `loadingText`, slot customization, `unstyled`, and `asChild` polymorphism.',
-    importCode: `import { Button } from '@kreattix-ui/react';`,
+    importCode: `import { Button } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'variant', label: 'Variant', type: 'select', options: ['solid', 'soft', 'outline', 'ghost', 'link'], defaultValue: 'solid' },
       { name: 'tone', label: 'Tone', type: 'select', options: ['primary', 'neutral', 'success', 'danger'], defaultValue: 'primary' },
@@ -636,7 +636,7 @@ export const LAYOUT_DISPLAY_DOCS: ComponentDocEntry[] = [
     summary: 'Square icon-only button with TypeScript-enforced aria-label.',
     description:
       'IconButton shares all Button variants, tones, and sizes while enforcing an accessible `aria-label` in TypeScript.',
-    importCode: `import { IconButton } from '@kreattix-ui/react';`,
+    importCode: `import { IconButton } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'variant', label: 'Variant', type: 'select', options: ['solid', 'soft', 'outline', 'ghost'], defaultValue: 'soft' },
       { name: 'tone', label: 'Tone', type: 'select', options: ['primary', 'neutral', 'danger'], defaultValue: 'primary' },

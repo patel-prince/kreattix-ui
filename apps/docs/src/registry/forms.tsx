@@ -42,7 +42,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Unified accessible wrapper providing label, required asterisk, description, and error alert.',
     description:
       'Field eliminates MUI-style FormControl boilerplate. All Kreattix form controls include Field props built in, and you can use <Field> directly for custom controls.',
-    importCode: `import { Field } from '@kreattix-ui/react';`,
+    importCode: `import { Field } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'label', label: 'Label', type: 'text', defaultValue: 'API Key' },
       { name: 'description', label: 'Description', type: 'text', defaultValue: 'Keep your secret key private.' },
@@ -99,7 +99,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Text input with built-in Field ARIA wiring, addons, and clearable button.',
     description:
       'Input supports prefix/suffix addons, one-click clearable state, validation states, and automatic label/description/error accessibility.',
-    importCode: `import { Input } from '@kreattix-ui/react';`,
+    importCode: `import { Input } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'size', label: 'Size', type: 'select', options: ['sm', 'md', 'lg'], defaultValue: 'md' },
       { name: 'label', label: 'Label', type: 'text', defaultValue: 'Email Address' },
@@ -157,7 +157,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Multi-line text input with live character counter and Field ARIA wiring.',
     description:
       'Textarea integrates Field label/error wiring and an optional live character counter.',
-    importCode: `import { Textarea } from '@kreattix-ui/react';`,
+    importCode: `import { Textarea } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'label', label: 'Label', type: 'text', defaultValue: 'Release Notes' },
       { name: 'showCount', label: 'Show Count', type: 'boolean', defaultValue: true },
@@ -205,7 +205,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Accessible checkbox supporting checked, unchecked, and indeterminate states.',
     description:
       'Built on @radix-ui/react-checkbox with label, description, error, and indeterminate state support.',
-    importCode: `import { Checkbox } from '@kreattix-ui/react';`,
+    importCode: `import { Checkbox } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'label', label: 'Label', type: 'text', defaultValue: 'Enable two-factor authentication' },
       { name: 'description', label: 'Description', type: 'text', defaultValue: 'Recommended for team admins.' },
@@ -249,7 +249,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Spring-animated toggle switch with configurable label placement.',
     description:
       'Built on @radix-ui/react-switch, Switch provides instant tactile feedback and full keyboard support.',
-    importCode: `import { Switch } from '@kreattix-ui/react';`,
+    importCode: `import { Switch } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'label', label: 'Label', type: 'text', defaultValue: 'Real-time sync' },
       { name: 'labelPlacement', label: 'Label Placement', type: 'select', options: ['end', 'start'], defaultValue: 'end' },
@@ -292,7 +292,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Radio group with 1-liner options or compound items and card variant.',
     description:
       'Built on @radix-ui/react-radio-group with roving tabindex and both `default` and `card` visual variants.',
-    importCode: `import { RadioGroup } from '@kreattix-ui/react';`,
+    importCode: `import { RadioGroup } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'variant', label: 'Variant', type: 'select', options: ['default', 'card'], defaultValue: 'card' },
       { name: 'orientation', label: 'Orientation', type: 'select', options: ['vertical', 'horizontal'], defaultValue: 'vertical' },
@@ -346,7 +346,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Single or range slider with live value readout.',
     description:
       'Built on @radix-ui/react-slider with keyboard stepping, range support, and optional `showValue` header.',
-    importCode: `import { Slider } from '@kreattix-ui/react';`,
+    importCode: `import { Slider } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'showValue', label: 'Show Value', type: 'boolean', defaultValue: true },
       { name: 'disabled', label: 'Disabled', type: 'boolean', defaultValue: false },
@@ -396,7 +396,7 @@ export const FORMS_DOCS: ComponentDocEntry[] = [
     summary: 'Accessible select dropdown with 1-liner options prop AND Radix compound subcomponents.',
     description:
       'Select combines AntD-level simplicity (`options={[...]}`) with Radix UI Select keyboard navigation, typeahead, and portal positioning.',
-    importCode: `import { Select } from '@kreattix-ui/react';`,
+    importCode: `import { Select } from '@kreattix/ui';`,
     playgroundControls: [
       { name: 'label', label: 'Label', type: 'text', defaultValue: 'Region' },
       { name: 'placeholder', label: 'Placeholder', type: 'text', defaultValue: 'Choose region...' },
